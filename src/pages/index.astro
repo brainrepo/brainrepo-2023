@@ -12,7 +12,6 @@ import slugify from "@utils/slugify";
 import { SOCIALS } from "@config";
 
 const posts = await getCollection("blog");
-
 const sortedPosts = getSortedPosts(posts);
 const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
 
@@ -23,6 +22,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   <Header />
   <main id="main-content">
     <section id="hero">
+      <img src="/assets/logo.png" alt="brainrepo logo" class="mr-6 w-32" />
       <h1>My brain repo</h1>
       <a
         target="_blank"
@@ -41,22 +41,25 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       </a>
 
       <p>
-        Hello I am <span class="text-skin-accent">BRAINREPO</span> also known as
+        Hello, I am <span class="text-skin-accent">BRAINREPO,</span> also known as
         <span class="text-skin-accent">Mauro Murru</span>. From 9.00 am to 6.00
-        pm I am a senior software engineer in <a href="">Nearform</a>. I spend
+        pm, I am a senior software engineer at <a href="">Nearform</a>. I spend
         my days creating digital products for big companies and doing <span
           class="text-skin-accent">opensource</span
-        > in the JS an Typescript ecosystem.
+        > in the JS and Typescript ecosystem.
       </p>
-      <p>I am also a journalist registered in the Italian public registry.</p>
       <p>
-        I am also a podcaster, in fact since january 2020 I am the founder and
-        the host of
+        In addition, I am a journalist registered with the Italian public
+        registry.
+      </p>
+      <p>
+        My other passion is podcasting. Since January 2020, I have been the host
+        and founder of the
         <a class="text-skin-accent underline" href="https://www.gitbar.it"
           >gitbar podcast</a
-        >. A podcast in italian where we speak about software development and
-        the like. Gitbar has also a community with around 1200 members, and yes,
-        I am also the community manager.
+        >. A podcast in Italian where we speak about software development and
+        the like. Gitbar also has a community with around 1200 members; and yes, I
+        am the community manager.
       </p>
 
       {
