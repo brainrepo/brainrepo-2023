@@ -1,91 +1,81 @@
 ---
 author: Sat Naing
 pubDatetime: 2023-01-30T15:57:52.737Z
-title: AstroPaper 2.0
-postSlug: astro-paper-2
+title: I am tired of hearing banalities about remote working
+postSlug: remote-working-bullshits
 featured: true
 ogImage: https://user-images.githubusercontent.com/53733092/215771435-25408246-2309-4f8b-a781-1f3d93bdf0ec.png
 tags:
-  - release
-description: AstroPaper with the enhancements of Astro v2. Type-safe markdown contents, bug fixes and better dev experience etc.
+  - remote work
+description: As you know, I’ve been working for a full-remote tech company, and I love to do it!
 ---
 
-Astro 2.0 has been released with some cool features, breaking changes, DX improvements, better error overlay and so on. AstroPaper takes advantage of those cool features, especially Content Collections API.
+**All opinions I express here are my ones.**
 
-<!-- ![Introducing AstroPaper 2.0](https://user-images.githubusercontent.com/53733092/215683840-dc2502f5-8c5a-44f0-a26c-4e7180455056.png) -->
+As you know, I’ve been working for a full-remote tech company, and I love to do it!
 
-![Introducing AstroPaper 2.0](https://user-images.githubusercontent.com/53733092/215771435-25408246-2309-4f8b-a781-1f3d93bdf0ec.png)
+I explain and share my opinion very calmly and moderately, but when I read statements that trivialize crucial topics, I lose self-control and rage.
 
-## Table of contents
+That’s what happened a few days ago reading a post on LinkedIn.
 
-## Features & Changes
+But let’s see those bullshit one by one.
 
-### Type-safe Frontmatters and Redefined Blog Schema
+## Bullshit # 1
 
-Frontmatter of AstroPaper 2.0 markdown contents are now type-safe thanks to Astro’s Content Collections. Blog schema is defined inside the `src/content/_schemas.ts` file.
+> Come to think of it: the world is not built by people teleworking…<br />
+> We want to invent and experiment with new ways of working.<br />
+> Because, yes, the world is changing…<br />
+> We want to train young people in our business on the ground.<br />
+> We want to be there for our customers.<br />
+> We want to share technical opinions in an open space that may be a little noisy but is full of life…<br />
+> We want to shake hands.<br />
+> We want to laugh at the coffee machine.<br />
+> We don’t want this “trend” that isolates people.<br />
+> It is a sad fate to don’t leave your home anymore!<br />
+> Locked up at home… without an electronic bracelet… whatever 🤔…<br />
+> So, yes, once again, I may push away the “charentaise” sellers and the “pilou pilou pyjama” suppliers.<br />
+> We at **\*\*\*\*** are going back to real life.<br />
 
-### New Home for Blog contents
+And if you like living into cloistering, ordering online and living as an avatar in the metaverse, I think we’ll never meet, and that’s certainly not a bad thing!
 
-All the blog posts were moved from `src/contents` to `src/content/blog` directory.
+Ok, firstly, a deep breath,
 
-### New Fetch API
+#
 
-Contents are now fetched with `getCollection` function. No relative path to the content needs to be specified anymore.
+the world is changing, and how people interact also, I am not a 100% digital life fan, but I am for a good balance between the digital and physical parts. As you see, I don’t speak about real life because real life also contains a digital side!
 
-```ts
-// old content fetching method
-- const postImportResult = import.meta.glob<MarkdownInstance<Frontmatter>>(
-  "../contents/**/**/*.md",);
+“We want to be there for our customers”
 
-// new content fetching method
-+ const postImportResult = await getCollection("blog");
-```
+what does it mean? Your customer needs your physical presence. Why? What can your body give more to your customer (😂)?
 
-### Modified Search Logic for better Search Result
+I think your customer prefers your attention, sensitivity, patience, expertise, pragmatism and effectiveness.
 
-In the older version of AstroPaper, when someone search some article, the search criteria keys that will be searched are `title`, `description` and `headings` (heading means all the headings h1 ~ h6 of the blog post). In AstroPaper v2, only `title` and `description` will be searched as the user types.
+We can give all things with honest communication, commitment and empathy in front of a webcam (mandatorily on) or with a well-written email!
 
-### Renamed Frontmatter Properties
+“We want to share technical opinions in an open space that may be a little noisy but is full of life.”
 
-The following frontmatter properties are renamed.
+Hei man, if you would see our slack channels, where hundreds of people share opinions, experiences and their pets’ photos, you would understand. And you know, being a fully remote company allows us to amplify that because, in the channel, you see the true diversity, people from different places, with various religions or gender speaking together with respect, pleasure and open-mindedness.
 
-| Old Names | New Names   |
-| --------- | ----------- |
-| datetime  | pubDatetime |
-| slug      | postSlug    |
+I was born in a little village in the centre of Sardinia. Say to me when I could have had such an opportunity! Thanks to remote working, I have this opportunity and defend it with all my might!
 
-### Default Tag for blog post
+Speaking about the opportunity, in a world without remote working, how a guy/girl can work for an international company and be part of a global impact without living in his/her hometown? This has a significant effect, you know? Little villages are dying, and people following the occasion are sacrificing their quality of life!
 
-If a blog post doesn't have any tag (in other words, frontmatter property `tags` is not specified), the default tag `others` will be used for that blog post. But you can set the default tag in the `/src/content/_schemas.ts` file.
+“We want to shake hands. We want to laugh at the coffee machine.”
 
-```ts
-// src/contents/_schemas.ts
-export const blogSchema = z.object({
-  // ---
-  // replace "others" with whatever you want
-  tags: z.array(z.string()).default(["others"]),
-  ogImage: z.string().optional(),
-  description: z.string(),
-});
-```
+How strong are the relations constructed in front of the coffee machine?
 
-### New Predefined Dark Color Scheme
+Quality rather than quantity determines the power of our relationships.
 
-AstroPaper v2 has a new dark color scheme (high contrast & low contrast) which is based on Astro's dark logo. Check out [this link](https://astro-paper.pages.dev/posts/predefined-color-schemes#astro-dark) for more info.
+I am just coming back from a very intense company retirement with activities that helped me reach my limits, and I am pretty sure that the experiences I shared with my colleagues are stronger than years of coffee machine times! I can call them friends after seeing them just one time!
 
-![New Predefined Dark Color Scheme](https://user-images.githubusercontent.com/53733092/215680520-59427bb0-f4cb-48c0-bccc-f182a428d72d.svg)
+These shared experiences are necessary for professional remote working and not only that.
 
-### Automatic Class Sorting
+We at **\*\*\*\*** are going back to real life.
 
-AstroPaper 2.0 includes automatic class sorting with [TailwindCSS Prettier plugin](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier)
+And if you like living into cloistering, ordering online and living as an avatar in the metaverse, I think we’ll never meet, and that’s certainly not a bad thing!
 
-### Updated Docs & README
+I am not isolated. I am remote and connected to the world.
 
-All the [#docs](https://astro-paper.pages.dev/tags/docs/) blog posts and [README](https://github.com/satnaing/astro-paper#readme) are updated for this AstroPaper v2.
+If I am living with an electronic bracelet, I am happy to have it because my jail is the entire world!
 
-## Bug Fixes
-
-- fix broken tags in the Blog Post page
-- in a tag page, the last part of the breadcrumb is now updated to lower-case for consistency
-- exclude draft posts in a tag page
-- fix 'onChange value not updating issue' after a page reload
+Ps: There are another thousand good reasons why remote working well-made is a good thing, but I am nervous, tired, and at midnight. I’m going to bed. See you!
