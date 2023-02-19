@@ -92,7 +92,7 @@ Do you feel them silly? 😂. I still am a developer, and cheering is our favour
 Jokes aside, there is one big limit that Directus shows after a while you use it. So if you want to do something more complex than classic crud or if you want to create your extension, you need to rely on complete documentation.
 I found myself digging into the source, trying to understand how things work.
 
-What next
+# What next
 
 The lack of documentation is why I'll start a little series of tutorials in the following days.
 I want to contribute to this fantastic project, and writing some blog posts could be an excellent way to do it.
