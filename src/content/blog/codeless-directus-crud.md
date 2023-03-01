@@ -15,7 +15,6 @@ tags:
   - ts
 description: Creating side projects or digital products is nearly impossible in this case. My "Prof of concept" folder is full of unfinished projects, all stranded before I even started writing the business logic, and this demonstrates that theory.
 ---
-# Directus episode 2
 
 In a sense, low code implements the basic concepts of pragmatism, so let's tinker with Directus a bit.
 
