@@ -140,4 +140,4 @@ Very little effort and our CRUD is in place
 
 We will discuss how to create relations between collections in the next blog post. We will create one-to-many and many-to-many relationships! 
 
-See ya0
+See ya!
