@@ -14,7 +14,6 @@ tags:
   - js
   - ts
 description: In a sense, low code implements the basic concepts of pragmatism, so let's tinker with Directus a bit.
-
 ---
 
 In a sense, low code implements the basic concepts of pragmatism, so let's tinker with Directus a bit.
@@ -23,7 +22,7 @@ In a sense, low code implements the basic concepts of pragmatism, so let's tinke
 
 Today we want to try to create a tool that works as a backend for our podcast. It should allow us to configure the podcast feed with all information and allow us to create new episodes.
 
-Our data structure is very simple. We have three tables: 
+Our data structure is very simple. We have three tables:
 
 - the first for the podcasts,
 - the second for episodes,
@@ -38,35 +37,35 @@ It seems a very simple table structure but being honest, ins the most significan
 Installing directus on your computer is a straightforward procedure. Just one requirement, having nodejs installed on your machine is more than enough.
 
 1. First of all, we create a folder that will hold our project
-    
-    ```bash
-    mkdir low-code-with-directus
-    cd low-code-with-directus
-    ```
-    
+
+   ```bash
+   mkdir low-code-with-directus
+   cd low-code-with-directus
+   ```
+
 2. After we initialize the new folder as a nodejs project
-    
-    ```bash
-    npm init
-    
-    ```
-    
+
+   ```bash
+   npm init
+
+   ```
+
 3. Once we have answered all the questions npm asks, we can use npx to initialize the directus project inside the folder.
-    
-    ```bash
-    npx directus init
-    ```
-    
-    The next step is to choose the database. In this tutorial, we will use SQLite, but you can use Postgres, MySQL, SqlServer, and more if you already have them installed.
-    
-    After choosing the database, the Directus installer cli will ask us for our admin username and password. We will choose `admin@example.com` as our username and `password` as our password. 
-    
+
+   ```bash
+   npx directus init
+   ```
+
+   The next step is to choose the database. In this tutorial, we will use SQLite, but you can use Postgres, MySQL, SqlServer, and more if you already have them installed.
+
+   After choosing the database, the Directus installer cli will ask us for our admin username and password. We will choose `admin@example.com` as our username and `password` as our password.
+
 4. Now we are ready to start our directus server.
-    
-    ```bash
-    npx directus start
-    ```
-    
+
+   ```bash
+   npx directus start
+   ```
+
 5. Wippy! now our Directus instance will be reachable at [`http://127.0.0.1:8055/`](http://127.0.0.1:8055/)
 
 ## Inside the folder
@@ -121,13 +120,13 @@ An accordion will be expanded, proposing some basic configurations that we fill.
 
 ![Directus view](/images/directus-crud-1/directus-crud-7.png)
 
-We repeat all the previous steps to create all the fields without the “episodes”. That field will be a relation, and we reserve a specific 
+We repeat all the previous steps to create all the fields without the “episodes”. That field will be a relation, and we reserve a specific
 
 ![Directus view](/images/directus-crud-1/directus-crud-8.png)
 
 ![Directus view](/images/directus-crud-1/directus-crud-9.png)
 
-We repeat the same process for the episode collection and for the chapters as well. 
+We repeat the same process for the episode collection and for the chapters as well.
 
 # Enter the data
 
@@ -139,6 +138,6 @@ Very little effort and our CRUD is in place
 
 # Cliffhanger
 
-We will discuss how to create relations between collections in the next blog post. We will create one-to-many and many-to-many relationships! 
+We will discuss how to create relations between collections in the next blog post. We will create one-to-many and many-to-many relationships!
 
 See ya!

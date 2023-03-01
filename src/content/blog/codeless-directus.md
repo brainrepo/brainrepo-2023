@@ -3,7 +3,7 @@ author: Mauro Murru
 pubDatetime: 2023-02-19T14:42:52.737Z
 title: Code or no-code, diaries of a half developer half entrepreneur using Directus
 postSlug: codeless-with-directus
-featured: true
+featured: false
 ogImage: /images/directus.png
 tags:
   - codeless
