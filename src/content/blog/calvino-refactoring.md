@@ -4,7 +4,7 @@ pubDatetime: 2023-03-06T14:42:52.737Z
 title: What would it be like if Italo Calvino and Sun Tzu explained refactoring?
 postSlug: calvino-sun-tzu-refactoring
 featured: true
-ogImage: /images/directus.png
+ogImage: /images/leonia.jpg
 tags:
   - refactoring
 description: |
