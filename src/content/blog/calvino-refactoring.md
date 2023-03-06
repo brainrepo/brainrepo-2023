@@ -50,7 +50,7 @@ It is said that to develop a good habit, we must repeat it, repeat it again, and
 
 Refactoring is not a spot activity. We should create a routine following the infinite cycle of Test-Driven Development (TDD); write the test, develop the micro-functionality on the fly to make it work, and then refactor, clean up the site and improve the connections.
 
-Every time we refactor, we must do it in the best way possible, constantly guided by pragmatism, in other words, organizing everything within the available timeframe.
+Every time we refactor, we must do it in the best way possible but constantly guided by pragmatism, in other words, organizing everything within the available timeframe.
 
 And then, once again, a red test, a new feature, and refactoring...
 
