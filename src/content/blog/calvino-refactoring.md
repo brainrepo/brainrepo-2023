@@ -21,7 +21,7 @@ The day has flown by quickly, and I have a headache.
 
 I spent the day refactoring the code. Refactoring is not a simple task - there are many things to keep in mind and many things to discover along the way.
 
-Now is the time to relax and reread a beautiful book I read many years ago.
+Now is the time to relax and reread a beautiful book I read it many years ago.
 "Invisible Cities" by Italo Calvino.
 
 > The city of Leonia refashions itself every day:
@@ -44,13 +44,13 @@ Even though these simple words may sound like a magic formula, we have no magic 
 
 ## What is refactoring?
 
-Refactoring is an internal change or evolution (in the Darwinian sense) that does not alter the code's external behaviour and aims to improve the characteristics that make our code resilient, it is intended to fix bugs that are not merely code failures but rather that affect maintainability, complexity, and performance.
+Refactoring is an internal change or evolution (in the Darwinian sense) that does not alter the code's external behaviour and aims to improve the characteristics that make our code resilient, I am not refering to the bugfixing activity, but rather all the action for increase maintainability, performance and reduce the complexity.
 
 It is said that to develop a good habit, we must repeat it, repeat it again, and repeat it some more, and the same goes for refactoring.
 
-Refactoring is not a spot activity. We should create a routine following the infinite cycle of Test-Driven Development (TDD); write the test, develop the micro-functionality on the fly to make it work, and then refactor, clean up the site and improve the connections.
+Refactoring shouldn't be a one off activity. We should create a routine following the infinite cycle of Test-Driven Development (TDD); write the test, develop the micro-functionality on the fly, just to make it work, and then refactorone off, just  cleaning and refining what done.
 
-Every time we refactor, we must do it in the best way possible, constantly guided by pragmatism, in other words, organizing everything within the available timeframe.
+Every time we refactor, we must do it in the best way possible, constantly guided by pragmatism ( come back to this issue later.I come back to this issue later), in other words, organizing everything in order to complete the activity in the available timeframe.
 
 And then, once again, a red test, a new feature, and refactoring...
 
@@ -60,7 +60,7 @@ The first step to understanding refactoring is to realize there are two ways of 
 
 Kent Beck uses the metaphor of two hats, one for writing code and the other for refactoring.
 
-Whenever we write code, we put ourselves in the shoes of bricklayers -- the professionals who, in a **tactical** way, create something functional in the shortest time possible without being concerned about the complexity increase.
+Whenever we write code, we put ourselves in the shoes of bricklayers -- the professionals who, in a **tactical** way, create something "that works" in the shortest time possible without being concerned about the complexity increase.
 
 ![twohats](/images/twohats.png)
 https://www.deviantart.com/goombablood/art/When-two-hats-aren-t-enough-863446109
@@ -122,7 +122,7 @@ Consistency allows us to learn things in one place and reuse/recognize them ever
 
 Knowing the rules, we no longer need to rack our brains looking for patterns or making wrong assumptions.
 
-Because of that, when we learn something that is not obvious from our code, we need to memorize it. But*,* unfortunately*,* our memorization ability is finite (mine is very limited), and, like the ancient scribes, when we achieve to solve the puzzle, we need to formalize our understood bringing it out from our minds and putting it into code (I mean not only on writing code but perhaps removing it is more important 😀).
+Because of that, when we learn something that is not obvious from our code, we need to memorize it. But, unfortunately, our memorization ability is finite (mine is very limited), and, like the ancient scribes, when we achieve to solve the puzzle, we need to formalize our understood bringing it out from our minds and putting it into code (I mean not only on writing code but perhaps removing it is more important 😀).
 
 ## The pitfalls in the search for consistency
 
@@ -131,8 +131,6 @@ The need for consistency leads us to a compulsive and often unconscious search, 
 The **comprehension refactoring** and the **aesthetic lifting** (Yuch refactoring).
 
 The violent attack of comprehension refactoring is activated when we don't understand what's happening. When we are entangled in a dense maze of classes and functions, and we don't know why they are there and what they do.
-
-This is because nobody has yet realized that the only action needed is to bring the knowledge from the brain to code.
 
 As Martin Fowler would say:
 
