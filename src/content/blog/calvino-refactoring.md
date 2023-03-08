@@ -4,7 +4,7 @@ pubDatetime: 2023-03-06T14:42:52.737Z
 title: What would it be like if Italo Calvino and Sun Tzu explained refactoring?
 postSlug: calvino-sun-tzu-refactoring
 featured: true
-ogImage: /images/directus.png
+ogImage: /images/leonia.jpg
 tags:
   - refactoring
 description: |
@@ -48,9 +48,9 @@ Refactoring is an internal change or evolution (in the Darwinian sense) that doe
 
 It is said that to develop a good habit, we must repeat it, repeat it again, and repeat it some more, and the same goes for refactoring.
 
-Refactoring shouldn't be a one off activity. We should create a routine following the infinite cycle of Test-Driven Development (TDD); write the test, develop the micro-functionality on the fly, just to make it work, and then refactorone off, just  cleaning and refining what done.
+Refactoring shouldn't be a one off activity. We should create a routine following the infinite cycle of Test-Driven Development (TDD); write the test, develop the micro-functionality on the fly, just to make it work, and then refactorone off, just cleaning and refining what done.
 
-Every time we refactor, we must do it in the best way possible, constantly guided by pragmatism ( come back to this issue later.I come back to this issue later), in other words, organizing everything in order to complete the activity in the available timeframe.
+Every time we refactor, we must do it in the best way possible, constantly guided by pragmatism (I come back to this issue later), in other words, organizing everything in order to complete the activity in the available timeframe.
 
 And then, once again, a red test, a new feature, and refactoring...
 
