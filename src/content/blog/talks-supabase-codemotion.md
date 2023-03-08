@@ -1,7 +1,7 @@
 ---
 author: Mauro Murru
 pubDatetime: 2023-03-01T18:42:52.737Z
-title: Supabase, easy backend - video and slides of the Codemotion's talk
+title: Talk - Supabase, easy backend - video and slides of the Codemotion's talk
 postSlug: supabase-talk
 featured: true
 ogImage: /images/directus.png
