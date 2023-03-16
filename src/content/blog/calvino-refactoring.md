@@ -83,7 +83,7 @@ Unfortunately, the products we develop today often do not envision the future cl
 
 🧭 We can do it guided by **Values**.
 
-## \***\*Consistency\*\***
+## Consistency
 
 > On the sidewalks, encased in spotless plastic bags,
 > the remains of yesterday's Leonia await the garbage
@@ -174,7 +174,7 @@ So, we have two paths to follow: accepting the compulsive refactoring cycle or r
 
 This is not an effortless decision, as it presupposes the development of a pragmatic awareness that leads to accepting imperfection and finding a balance between consistency and innovation.
 
-To do this, it is essential to start with three questions:
+To do this, it is essential to start with four questions:
 
 - Do I have enough information to justify my action (whether it is a consistency break or innovation introduction),
 - Wasn’t this information available in the design phase? And why was it not done that way if it was available in the design phase?
@@ -207,8 +207,8 @@ Romantically, I like to imagine the value of code memory.
 
 Calvino describes this feeling and idea better than I in the final part of Invisible Cities when he says:
 
-> “The inferno of the living is not something that will be; if there is one, it is what is already here, the inferno where we live every day, that we form by being together.
-> There are two ways to escape suffering it. The first is easy for many: accept the inferno and become such a part of it that you can no longer see it. The second is risky and demands constant vigilance and apprehension: seek and learn to recognize who and what, in the midst of inferno, are not inferno, then make them endure, give them space.”
+> The inferno of the living is not something that will be; if there is one, it is what is already here, the inferno where we live every day, that we form by being together.
+> There are two ways to escape suffering it. The first is easy for many: accept the inferno and become such a part of it that you can no longer see it. The second is risky and demands constant vigilance and apprehension: seek and learn to recognize who and what, in the midst of inferno, are not inferno, then make them endure, give them space.
 
 ---
 
