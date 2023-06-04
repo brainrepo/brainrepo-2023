@@ -11,6 +11,10 @@ import getSortedPosts from "@utils/getSortedPosts";
 import slugify from "@utils/slugify";
 import { SOCIALS } from "@config";
 
+const articles = await fetch(
+  "https://dev.to/api/articles?username=brainrepo"
+).then(response => response.json());
+
 const posts = await getCollection("blog");
 const sortedPosts = getSortedPosts(posts);
 const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
@@ -76,52 +80,43 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     <Hr />
 
     {
-      featuredPosts.length > 0 && (
+      articles.length > 0 && (
         <>
           <section id="featured">
             <h2>Featured</h2>
             <ul>
-              {featuredPosts.map(({ data }) => (
-                <Card
-                  href={`/posts/${slugify(data)}`}
-                  frontmatter={data}
-                  secHeading={false}
-                />
-              ))}
+              {articles.map(
+                ({
+                  title,
+                  url,
+                  description,
+                  published_at,
+                  tags,
+                }: {
+                  title: string;
+                  url: string;
+                  description: string;
+                  published_at: Date;
+                  tags: string[];
+                }) => (
+                  <Card
+                    href={url}
+                    frontmatter={{
+                      title,
+                      description,
+                      pubDatetime: published_at,
+                      tags,
+                    }}
+                    secHeading={false}
+                  />
+                )
+              )}
             </ul>
           </section>
           <Hr />
         </>
       )
     }
-
-    <section id="recent-posts">
-      <h2>Recent Posts</h2>
-      <ul>
-        {
-          sortedPosts.map(
-            ({ data }, index) =>
-              index < 4 && (
-                <Card
-                  href={`/posts/${slugify(data)}`}
-                  frontmatter={data}
-                  secHeading={false}
-                />
-              )
-          )
-        }
-      </ul>
-      <div class="all-posts-btn-wrapper">
-        <LinkButton href="/posts">
-          All Posts
-          <svg xmlns="http://www.w3.org/2000/svg"
-            ><path
-              d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"
-            ></path>
-          </svg>
-        </LinkButton>
-      </div>
-    </section>
   </main>
 
   <Footer />
@@ -130,7 +125,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 <style>
   /* ===== Hero Section ===== */
   #hero {
-    @apply pt-8 pb-6;
+    @apply pb-6 pt-8;
   }
   #hero h1 {
     @apply my-4 inline-block font-title text-3xl font-bold uppercase  sm:my-8 sm:text-5xl;
@@ -148,13 +143,13 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     @apply mt-4 flex flex-col sm:flex-row sm:items-center;
   }
   .social-links {
-    @apply mr-2 mb-1 whitespace-nowrap sm:mb-0;
+    @apply mb-1 mr-2 whitespace-nowrap sm:mb-0;
   }
 
   /* ===== Featured & Recent Posts Sections ===== */
   #featured,
   #recent-posts {
-    @apply pt-12 pb-6;
+    @apply pb-6 pt-12;
   }
   #featured h2,
   #recent-posts h2 {
